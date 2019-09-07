@@ -19,9 +19,6 @@ import javax.servlet.http.HttpServletRequest;
 
 /**
  * AOP 记录用户操作日志
- *
- * @author MrBird
- * @link https://mrbird.cc/Spring-Boot-AOP%20log.html
  */
 @Aspect
 @Component
