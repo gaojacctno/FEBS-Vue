@@ -6,7 +6,6 @@ import cc.mrbird.febs.common.utils.HttpContextUtil;
 import cc.mrbird.febs.common.utils.IPUtil;
 import cc.mrbird.febs.system.domain.SysLog;
 import cc.mrbird.febs.system.service.LogService;
-import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.shiro.SecurityUtils;
 import org.aspectj.lang.ProceedingJoinPoint;
@@ -24,7 +23,6 @@ import javax.servlet.http.HttpServletRequest;
  * @author MrBird
  * @link https://mrbird.cc/Spring-Boot-AOP%20log.html
  */
-@Slf4j
 @Aspect
 @Component
 public class LogAspect {
