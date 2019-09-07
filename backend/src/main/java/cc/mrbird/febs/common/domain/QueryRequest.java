@@ -1,8 +1,6 @@
 package cc.mrbird.febs.common.domain;
 
 import lombok.Data;
-import lombok.ToString;
-
 import java.io.Serializable;
 
 @Data
