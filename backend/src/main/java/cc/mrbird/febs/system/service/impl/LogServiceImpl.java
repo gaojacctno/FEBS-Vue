@@ -106,7 +106,8 @@ public class LogServiceImpl extends ServiceImpl<LogMapper, SysLog> implements Lo
         save(log);
     }
 
-    private StringBuilder handleParams(StringBuilder params, Object[] args, List paramNames) throws JsonProcessingException {
+    @SuppressWarnings("rawtypes")
+	private StringBuilder handleParams(StringBuilder params, Object[] args, List paramNames) throws JsonProcessingException {
         for (int i = 0; i < args.length; i++) {
             if (args[i] instanceof Map) {
                 Set set = ((Map) args[i]).keySet();
