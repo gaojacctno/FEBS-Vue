@@ -8,7 +8,7 @@ import org.apache.ibatis.annotations.Param;
 
 public interface UserMapper extends BaseMapper<User> {
 
-    IPage<User> findUserDetail(Page page, @Param("user") User user);
+    IPage<User> findUserDetail(@SuppressWarnings("rawtypes") Page page, @Param("user") User user);
 
     /**
      * 获取单个用户详情
