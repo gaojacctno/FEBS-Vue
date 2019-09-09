@@ -35,7 +35,8 @@ public class CodeGenerator {
     // 包的基础路径
     private static final String BASE_PACKAGE_URL = "cc.mrbird.febs";
     // xml文件路径
-    private static final String XML_PACKAGE_URL = "/src/main/resources/mapper/";
+    @SuppressWarnings("unused")
+	private static final String XML_PACKAGE_URL = "/src/main/resources/mapper/";
     // xml 文件模板
     private static final String XML_MAPPER_TEMPLATE_PATH = "generator/templates/mapper.xml";
     // mapper 文件模板
@@ -101,7 +102,8 @@ public class CodeGenerator {
     }
 
     private static String scanner(String tip) {
-        Scanner scanner = new Scanner(System.in);
+        @SuppressWarnings("resource")
+		Scanner scanner = new Scanner(System.in);
         System.out.println(("请输入" + tip + "："));
         if (scanner.hasNext()) {
             String ipt = scanner.next();
