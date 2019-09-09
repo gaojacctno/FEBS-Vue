@@ -16,7 +16,7 @@ import com.baomidou.mybatisplus.generator.engine.FreemarkerTemplateEngine;
 
 /**
  * mybatis plus 提供的代码生成器
- * 可以快速生成 Entity、Mapper、Mapper XML、Service、Controller 等各个模块的代码
+  * 可以快速生成 Entity、Mapper、Mapper XML、Service、Controller 等各个模块的代码
  *
  * @link https://mp.baomidou.com/guide/generator.html
  */
