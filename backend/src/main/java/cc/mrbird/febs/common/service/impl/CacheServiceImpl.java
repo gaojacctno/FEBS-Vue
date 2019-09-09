@@ -32,7 +32,8 @@ public class CacheServiceImpl implements CacheService {
     @Autowired
     private MenuService menuService;
 
-    @Autowired
+    @SuppressWarnings("unused")
+	@Autowired
     private UserService userService;
 
     @Autowired
